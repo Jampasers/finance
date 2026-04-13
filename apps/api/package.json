@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "test": "jest --runInBand",
     "db:generate": "prisma generate",
-    "db:push": "prisma db push",
+    "db:push": "prisma db push --schema prisma/schema.prisma --config prisma.config.ts",
     "test:e2e": "echo e2e-pending"
   },
   "dependencies": {
@@ -38,9 +38,9 @@
     "jest": "^30.2.0",
     "prisma": "^6.6.0",
     "supertest": "^7.1.4",
+    "dotenv": "^16.6.1",
     "ts-jest": "^29.4.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
 }
-
