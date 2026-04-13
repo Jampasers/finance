@@ -1,0 +1,19 @@
+{
+  "name": "finance-bold-warung",
+  "private": true,
+  "packageManager": "pnpm@10.29.3",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "db:generate": "pnpm --filter api db:generate",
+    "db:push": "pnpm --filter api db:push"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.3",
+    "typescript": "^5.9.3"
+  }
+}
+
